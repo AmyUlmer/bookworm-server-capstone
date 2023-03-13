@@ -1,0 +1,81 @@
+[
+    {
+        "model": "bookwormapi.event",
+        "pk": 1,
+        "fields": {
+            "author": "Jane Austen",
+            "title":"Pride and Prejudice",
+            "released_date": "1813-01-28",
+            "length": "432 pages",
+            "description": "Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. The novel explores themes of love, marriage, social status, and class relationships in Georgian England.",
+            "book_genre": "Romance, Comedy, Satire", // how to show many book genres 
+            "reader": ""
+            //I do not think I need reader_id 
+        }
+    },
+    {
+        "model": "bookwormapi.event",
+        "pk": 2,
+        "fields": {
+            "author": "Emily St. John Mandel",
+            "title":"Station Eleven",
+            "released_date": "2014-09-09",
+            "length": "352 pages",
+            "description": "Station Eleven is a post-apocalyptic novel that tells the story of a group of survivors in the Great Lakes region after a deadly flu pandemic wipes out most of the world's population. The novel explores themes of memory, art, and the meaning of civilization.",
+            "book_genre": "Science Fiction, Dystopian, Literary Fiction",
+            "reader": ""
+        }
+    },
+    {
+        "model": "bookwormapi.event",
+        "pk": 3,
+        "fields": {
+            "author": "David Grann",
+            "title":"Killers of the Flower Moon",
+            "released_date": "2017-04-18",
+            "length": "352 pages",
+            "description": "Killers of the Flower Moon is a nonfiction book that tells the true story of the murders of members of the Osage tribe in the early 20th century. The book explores themes of racism, greed, and corruption in the early days of the FBI.",
+            "book_genre": "True Crime, History, Investigative Journalism",
+            "reader": ""
+        }
+    },
+    {
+        "model": "bookwormapi.event",
+        "pk": 4,
+        "fields": {
+            "author": "Tom Robbins",
+            "title":"Still Life with Woodpecker",
+            "released_date": "1980-04-01",
+            "length": "288 pages",
+            "description": "Still Life with Woodpecker is a novel that tells the story of two outcasts, a princess and an outlaw, who fall in love and go on a wild adventure. The novel explores themes of love, individuality, and the meaning of life.",
+            "book_genre": "Romance, Comedy, Satire",
+            "reader": ""
+        }
+    },
+    {
+        "model": "bookwormapi.event",
+        "pk": 5,
+        "fields": {
+            "author": "Lois Lowry",
+            "title":"The Giver",
+            "released_date": "1993-04-26",
+            "length": "192 pages",
+            "description": "The Giver is a dystopian novel set in a society that has eliminated pain, hunger, war, and other negative aspects of life, but also eliminated emotion, choice, and individuality. The novel explores themes of freedom, individuality, and the importance of memories.",
+            "book_genre": "Dystopian, Science Fiction, Young Adult",
+            "reader": ""
+        }
+    },
+    {
+        "model": "bookwormapi.event",
+        "pk": 6,
+        "fields": {
+            "author": "Mick Herron",
+            "title":"Slow Horses",
+            "released_date": "2010-03-30",
+            "length": "336",
+            "description": "A spy novel about a group of misfit spies in Slough House, a dumping ground for British intelligence agents who have screwed up their careers.",
+            "book_genre": "Mystery",
+            "reader": ""
+        }
+    }
+]
