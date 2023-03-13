@@ -1,0 +1,50 @@
+[
+    {
+        "model": "bookwormapi.reader",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "Books are my escape from reality. Whenever I need to get away from it all, I turn to a good book and let myself get lost in the story."
+        }
+    },
+    {
+        "model": "repairsapi.customer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "bio": "I love books because they allow me to learn about new ideas, cultures, and perspectives that I might never encounter in my daily life."
+        }
+    },
+    {
+        "model": "repairsapi.customer",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "bio": "Reading is a way for me to challenge myself and expand my thinking. I love the feeling of finishing a challenging book and knowing that I've grown from the experience."
+        }
+    },
+    {
+        "model": "repairsapi.customer",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "bio": "Books are my companions. No matter what is going on in my life, I know I can always turn to my favorite books and find comfort and solace in their pages."
+        }
+    },
+    {
+        "model": "repairsapi.customer",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "bio": "I love the feeling of being transported to a different time and place through the pages of a book. Reading is like a mini vacation that I can take anytime, anywhere."
+        }
+    },
+    {
+        "model": "repairsapi.customer",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "bio": "Books are like old friends that I can always return to. No matter how many times I read them, they never get old or boring - there's always something new to discover in their pages."
+        }
+    }
+]

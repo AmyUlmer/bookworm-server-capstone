@@ -1,0 +1,109 @@
+[
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 1,
+        "fields": {
+            "label": "Fiction"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 2,
+        "fields": {
+            "label": "Non-fiction"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 3,
+        "fields": {
+            "label": "Romance"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 4,
+        "fields": {
+            "label": "Mystery"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 5,
+        "fields": {
+            "label": "Thriller"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 6,
+        "fields": {
+            "label": "Science fiction"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 7,
+        "fields": {
+            "label": "Fantasy"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+        "pk": 8,
+        "fields": {
+            "label": "Horror"
+        }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 9,
+            "fields": {
+                "label": "Historical Fiction"
+            }
+    }, 
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 10,
+            "fields": {
+                "label": "Biography"
+            }
+    }, 
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 11,
+            "fields": {
+                "label": "Autobiography"
+            }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 12,
+            "fields": {
+                "label": "Memoir"
+            }
+    },
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 13,
+            "fields": {
+                "label": "Self-help"
+            }
+    },  
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 14,
+            "fields": {
+                "label": "Young Adult"
+            }
+    }, 
+    {
+        "model": "bookwormapi.bookGenre",
+            "pk": 15,
+            "fields": {
+                "label": "Poetry"
+            }
+    }
+]
+
+
