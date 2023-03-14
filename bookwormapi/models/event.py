@@ -3,9 +3,9 @@ from django.core.validators import MaxValueValidator
 
 
 class Event(models.Model):
-    event_name = models.CharField(on_delete=models.CASCADE,  max_length=50)
+    event_name = models.CharField(max_length=50)
     book = models.ForeignKey("Book", on_delete=models.CASCADE)
-    host = models.ForeignKey("Host", on_delete=models.CASCADE)
+    organizing_reader = models.ForeignKey("Reader", on_delete=models.CASCADE)
     location = models.CharField(max_length=150)
     date_of_event = models.DateField()
     start_time = models.TimeField()

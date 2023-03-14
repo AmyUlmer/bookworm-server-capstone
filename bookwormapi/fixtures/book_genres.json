@@ -1,104 +1,104 @@
 [
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 1,
         "fields": {
             "label": "Fiction"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 2,
         "fields": {
             "label": "Non-fiction"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 3,
         "fields": {
             "label": "Romance"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 4,
         "fields": {
             "label": "Mystery"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 5,
         "fields": {
             "label": "Thriller"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 6,
         "fields": {
             "label": "Science fiction"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 7,
         "fields": {
             "label": "Fantasy"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
         "pk": 8,
         "fields": {
-            "label": "Horror"
+            "label": "True Crime"
         }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 9,
             "fields": {
                 "label": "Historical Fiction"
             }
     }, 
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 10,
             "fields": {
                 "label": "Biography"
             }
     }, 
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 11,
             "fields": {
-                "label": "Autobiography"
+                "label": "Comedy"
             }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 12,
             "fields": {
                 "label": "Memoir"
             }
     },
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 13,
             "fields": {
                 "label": "Self-help"
             }
     },  
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 14,
             "fields": {
                 "label": "Young Adult"
             }
     }, 
     {
-        "model": "bookwormapi.bookGenre",
+        "model": "bookwormapi.BookGenre",
             "pk": 15,
             "fields": {
                 "label": "Poetry"
