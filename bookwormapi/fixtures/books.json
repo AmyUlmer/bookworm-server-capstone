@@ -9,7 +9,8 @@
             "length": 432,
             "description": "Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. The novel explores themes of love, marriage, social status, and class relationships in Georgian England.",
             "book_genre": 3, 
-            "reader": 2
+            "reader": 2, 
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678823627/Full-Stack%20Capstone/Pride_and_Prejudice_Cover_dohbpj.jpg"
             
         }
     },
@@ -23,7 +24,8 @@
             "length": 352,
             "description": "Station Eleven is a post-apocalyptic novel that tells the story of a group of survivors in the Great Lakes region after a deadly flu pandemic wipes out most of the world's population. The novel explores themes of memory, art, and the meaning of civilization.",
             "book_genre": 6, 
-            "reader": 3
+            "reader": 3,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678823847/Full-Stack%20Capstone/Station_Eleven_Cover_jd1s42.jpg"
         }
     },
     {
@@ -36,7 +38,8 @@
             "length": 352,
             "description": "Killers of the Flower Moon is a nonfiction book that tells the true story of the murders of members of the Osage tribe in the early 20th century. The book explores themes of racism, greed, and corruption in the early days of the FBI.",
             "book_genre": 8,
-            "reader": 1
+            "reader": 1,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678824032/Full-Stack%20Capstone/Killers_of_the_Flower_Moon_Cover_pt99b4.jpg"
         }
     },
     {
@@ -49,7 +52,8 @@
             "length": 288,
             "description": "Still Life with Woodpecker is a novel that tells the story of two outcasts, a princess and an outlaw, who fall in love and go on a wild adventure. The novel explores themes of love, individuality, and the meaning of life.",
             "book_genre": 1,
-            "reader": 5
+            "reader": 5,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678824119/Full-Stack%20Capstone/Woodpecker_Cover_nyjwzi.jpg"
         }
     },
     {
@@ -62,7 +66,8 @@
             "length": 192,
             "description": "The Giver is a dystopian novel set in a society that has eliminated pain, hunger, war, and other negative aspects of life, but also eliminated emotion, choice, and individuality. The novel explores themes of freedom, individuality, and the importance of memories.",
             "book_genre": 14,
-            "reader": 6
+            "reader": 6,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678824119/Full-Stack%20Capstone/Woodpecker_Cover_nyjwzi.jpg"
         }
     },
     {
@@ -75,7 +80,8 @@
             "length": 336,
             "description": "A spy novel about a group of misfit spies in Slough House, a dumping ground for British intelligence agents who have screwed up their careers.",
             "book_genre": 4,
-            "reader": 4
+            "reader": 4,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678824606/Full-Stack%20Capstone/Slow_Horses_Cover_jgkugd.jpg"
         }
     }
 ]

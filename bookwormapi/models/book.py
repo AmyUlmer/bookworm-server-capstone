@@ -7,5 +7,6 @@ class Book(models.Model):
     released_date = models.DateField()
     length = models.IntegerField()
     description = models.CharField(max_length=150)
-    book_genre = models.ForeignKey("BookGenre", on_delete=models.CASCADE)
-    reader = models.ForeignKey("Reader", on_delete=models.CASCADE)
+    book_genre = models.ForeignKey("BookGenre", on_delete=models.CASCADE, related_name= "BookGenre_book")
+    reader = models.ForeignKey("Reader", on_delete=models.CASCADE, related_name="reader_book")
+    image_url = models.CharField(max_length=200)
