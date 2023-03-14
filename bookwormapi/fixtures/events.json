@@ -5,12 +5,12 @@
         "fields": {
             "event_name": "The Classic Book Club",
             "book": 1,
-            "host": 1,
+            "organizing_reader": 1,
             "location": "1234 Main St, Anytown, USA",
             "date_of_event": "2023-03-30",
             "start_time": "19:00",
             "end_time": "21:00",
-            "max-capacity": 10
+            "max_capacity": 10
         }
     },
     {
@@ -19,12 +19,12 @@
         "fields": {
             "event_name": "Science Fiction and Fantasy Book Club",
             "book": 2,
-            "host": 1,
+            "organizing_reader": 1,
             "location": "5678 Maple Ave, Anytown, USA",
             "date_of_event": "2023-04-15",
             "start_time": "18:30",
             "end_time": "20:30",
-            "max-capacity": 12
+            "max_capacity": 7
         }
     },
     {
@@ -33,12 +33,12 @@
         "fields": {
             "event_name": "Non-Fiction Book Club",
             "book": 3,
-            "host": 2,
+            "organizing_reader": 2,
             "location": "1212 Elm St, Anytown, USA",
             "date_of_event": "2023-06-10",
             "start_time": "19:00",
             "end_time": "21:00",
-            "max-capacity": 15
+            "max_capacity": 10
         }
     },
     {
@@ -47,12 +47,12 @@
         "fields": {
             "event_name": "Contemporary Fiction Book Club",
             "book": 4,
-            "host": 3,
+            "organizing_reader": 3,
             "location": "9101 Pine St, Anytown, USA",
             "date_of_event": "2023-05-05",
             "start_time": "20:00",
             "end_time": "22:00",
-            "max-capacity": 10
+            "max_capacity": 10
         }
     },
     {
@@ -61,12 +61,12 @@
         "fields": {
             "event_name": "Young Adult Book Club",
             "book": 5,
-            "host": 5,
+            "organizing_reader": 5,
             "location": "1313 Oak St, Anytown, USA",
             "date_of_event": "2023-07-14",
             "start_time": "20:00",
             "end_time": "22:00",
-            "max-capacity": 12
+            "max_capacity": 5
         }
     },
     {
@@ -75,12 +75,12 @@
         "fields": {
             "event_name": "Mystery Book Club",
             "book": 6,
-            "host": 4,
+            "organizing_reader": 4,
             "location": "3456 Pine Street, Anytown USA",
             "date_of_event": "2023-09-10",
             "start_time": "14:00",
             "end_time": "16:00",
-            "max-capacity": 12
+            "max_capacity": 12
         }
     }
 ]
