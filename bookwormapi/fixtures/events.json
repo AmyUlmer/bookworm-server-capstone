@@ -10,7 +10,8 @@
             "date_of_event": "2023-03-30",
             "start_time": "19:00",
             "end_time": "21:00",
-            "max_capacity": 10
+            "max_capacity": 10,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678825303/Full-Stack%20Capstone/Classics_Book_Club_Image_la4sup.png "
         }
     },
     {
@@ -24,7 +25,8 @@
             "date_of_event": "2023-04-15",
             "start_time": "18:30",
             "end_time": "20:30",
-            "max_capacity": 7
+            "max_capacity": 7,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678825479/Full-Stack%20Capstone/Sci_fi_Fantasy_zrhlx9.png"
         }
     },
     {
@@ -38,7 +40,8 @@
             "date_of_event": "2023-06-10",
             "start_time": "19:00",
             "end_time": "21:00",
-            "max_capacity": 10
+            "max_capacity": 10,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678825909/Full-Stack%20Capstone/Non-Fiction_Book_Club_tjbmgs.png"
         }
     },
     {
@@ -52,7 +55,8 @@
             "date_of_event": "2023-05-05",
             "start_time": "20:00",
             "end_time": "22:00",
-            "max_capacity": 10
+            "max_capacity": 10,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678826097/Full-Stack%20Capstone/Contemporary_Fiction_Book_Club_cxdsfz.png"
         }
     },
     {
@@ -66,7 +70,8 @@
             "date_of_event": "2023-07-14",
             "start_time": "20:00",
             "end_time": "22:00",
-            "max_capacity": 5
+            "max_capacity": 5,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678826373/Full-Stack%20Capstone/young_adult_mo0vmu.png"
         }
     },
     {
@@ -80,7 +85,8 @@
             "date_of_event": "2023-09-10",
             "start_time": "14:00",
             "end_time": "16:00",
-            "max_capacity": 12
+            "max_capacity": 12,
+            "image_url": "https://res.cloudinary.com/dsur6xpj2/image/upload/v1678826441/Full-Stack%20Capstone/mystery_book_club_svyfet.png"
         }
     }
 ]
