@@ -66,7 +66,6 @@ class BookView(ViewSet):
         book.released_date = request.data["released_date"]
         book.length = request.data["length"]
         book.image_url = request.data["image_url"]
-
         book_genre = BookGenre.objects.get(pk=request.data["book_genre"])
         book.book_genre = book_genre
         book.save()

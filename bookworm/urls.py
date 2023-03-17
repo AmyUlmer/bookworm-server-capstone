@@ -18,11 +18,12 @@ from django.urls import path
 from bookwormapi.views import register_user, login_user
 from django.conf.urls import include
 from rest_framework import routers
-from bookwormapi.views import BookView, EventView
+from bookwormapi.views import BookView, EventView, BookGenreView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'books', BookView, 'book')
 router.register(r'events', EventView, 'event')
+router.register(r'bookgenres', BookGenreView, 'bookgenre')
 
 urlpatterns = [
     path('register', register_user),
