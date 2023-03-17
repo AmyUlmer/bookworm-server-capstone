@@ -62,10 +62,10 @@ class BookView(ViewSet):
             """
         book = Book.objects.get(pk=pk)
         book.author = request.data["author"]
-        book.title=request.data["title"]
-        book.released_date=request.data["released_date"]
-        book.length=request.data["length"]
-        book.image_url=request.data["image_url"]
+        book.title = request.data["title"]
+        book.released_date = request.data["released_date"]
+        book.length = request.data["length"]
+        book.image_url = request.data["image_url"]
 
         book_genre = BookGenre.objects.get(pk=request.data["book_genre"])
         book.book_genre = book_genre
@@ -78,10 +78,21 @@ class BookView(ViewSet):
         book.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+
+class GenreSerializer(serializers.ModelSerializer):
+    """JSON serializer for book genres
+    """
+    class Meta:
+        model = BookGenre
+        fields = ('id', 'label')
+
+
 class BookSerializer(serializers.ModelSerializer):
-    """JSON serializer for books"""
+    """JSON serializer for books
+    """
+    book_genre = GenreSerializer()
 
     class Meta:
         model = Book
-        fields = ('id','author', 'title', 'released_date',
+        fields = ('id', 'author', 'title', 'released_date',
                 'length', 'description', 'book_genre', 'reader', 'image_url')
