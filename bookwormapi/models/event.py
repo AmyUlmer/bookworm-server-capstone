@@ -17,6 +17,7 @@ class Event(models.Model):
     max_capacity = models.PositiveIntegerField(
         validators=[MaxValueValidator(10)])
     image_url = models.CharField(max_length=200)
+    attendees = models.ManyToManyField("Reader", through="EventReader", related_name="event_reader")
 
     @property
     def joined(self):
