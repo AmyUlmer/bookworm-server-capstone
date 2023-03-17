@@ -32,7 +32,7 @@ class BookGenreView(ViewSet):
 
 
 class BookGenreSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types
+    """JSON serializer for book genres
     """
     class Meta:
         model = BookGenre
