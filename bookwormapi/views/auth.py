@@ -10,7 +10,7 @@ from bookwormapi.models import Reader
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_user(request):
-    '''Handles the authentication of a gamer
+    '''Handles the authentication of a reader
 
     Method arguments:
       request -- The full HTTP request object
@@ -38,7 +38,7 @@ def login_user(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):
-    '''Handles the creation of a new gamer for authentication
+    '''Handles the creation of a new reader for authentication
 
     Method arguments:
       request -- The full HTTP request object
