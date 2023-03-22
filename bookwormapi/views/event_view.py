@@ -59,7 +59,7 @@ class EventView(ViewSet):
         book = Book.objects.get(pk=request.data["book"])
 
         #whichever keys are used on the request.data must match what the client is passing to the server.
-        event = Book.objects.create(
+        event = Event.objects.create(
             event_name=request.data["event_name"],
             location=request.data["location"],
             date_of_event=request.data["date_of_event"],
@@ -82,11 +82,11 @@ class EventView(ViewSet):
 
         event = Event.objects.get(pk=pk)
         event.event_name=request.data["event_name"]
-        event.location=request.data["location"],
-        event.date_of_event=request.data["date_of_event"],
-        event.start_time=request.data["start_time"],
-        event.end_time=request.data["start_time"],
-        event.max_capacity=request.data["max_capacity"],
+        event.location=request.data["location"]
+        event.date_of_event=request.data["date_of_event"]
+        event.start_time=request.data["start_time"]
+        event.end_time=request.data["start_time"]
+        event.max_capacity=request.data["max_capacity"]
         event.image_url=request.data["image_url"]
 
         book = Book.objects.get(pk=request.data["book"])
