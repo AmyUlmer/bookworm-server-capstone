@@ -20,12 +20,34 @@ class BookView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
-        """Handle GET requests to get all booka
+        """Handle GET requests to get all books
 
         Returns:
             Response -- JSON serialized list of books
         """
-        books = Book.objects.all()
+        # only users who create book can edit/delete
+        books = []
+        try:
+            reader = Reader.objects.get(user=request.auth.user)
+        except Reader.DoesNotExist:
+            reader = None
+        
+        if "user" in request.query_params:
+            books = Book.objects.filter(reader_id=reader)
+        
+        if "reader" in request.query_params:
+            readerId = request.query_params['reader']
+            books = Book.objects.filter(reader_id=readerId)
+        
+        else:
+            books = Book.objects.all()
+        
+        for book in books:
+            if reader is not None: 
+                if book.reader == reader:
+                    book.creator = True 
+
+        # books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -61,6 +83,7 @@ class BookView(ViewSet):
             Returns:
             Response -- Empty body with 204 status code
             """
+
         book = Book.objects.get(pk=pk)
         book.author = request.data["author"]
         book.title = request.data["title"]
@@ -97,4 +120,4 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ('id', 'author', 'title', 'released_date',
-                'length', 'description', 'book_genre', 'reader', 'image_url')
+                'length', 'description', 'book_genre', 'reader', 'image_url', 'creator')
