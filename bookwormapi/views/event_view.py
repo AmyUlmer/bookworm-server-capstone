@@ -26,23 +26,47 @@ class EventView(ViewSet):
         Returns:
             Response -- JSON serialized list of events
         """
-        #get the book from the request query params
-        book = request.query_params.get('book')
 
-        if book:
-            #filter the event queryset by the Book id
-            events = Event.objects.filter(book_id=book)
+        # only users who create an event can edit/delete
+        events = []
+        try:
+            reader = Reader.objects.get(user=request.auth.user)
+        except Reader.DoesNotExist:
+            reader = None
+        
+        if "user" in request.query_params:
+            events = Event.objects.filter(reader_id=reader)
+        
+        if "reader" in request.query_params:
+            readerId = request.query_params['reader']
+            events = Event.objects.filter(reader_id=readerId)
+        
         else:
-            #get all events
             events = Event.objects.all()
         
+        for event in events:
+            event.joined = reader in event.attendees.all()
+            if reader is not None: 
+                if event.organizing_reader == reader:
+                    event.creator = True 
+
+        #get the book from the request query params
+        # book = request.query_params.get('book')
+
+        # if book:
+            #filter the event queryset by the Book id
+            # events = Event.objects.filter(book_id=book)
+        # else:
+            #get all events
+            # events = Event.objects.all()
+
         # for each event, function checks if the currently authenticated user is in the "attendees" list for event.
-        reader = Reader.objects.get(user=request.auth.user)
+        # reader = Reader.objects.get(user=request.auth.user)
         # If they are, the 'joined' property on the event is set to 'true', otherwise 'false' 
         # Set the `joined` property on every event
-        for event in events:
+        # for event in events:
             # Check to see if the reader is in the attendees list on the event
-            event.joined = reader in event.attendees.all()
+            # event.joined = reader in event.attendees.all()
     
         serializer = EventSerializer(events, many=True)
         return Response(serializer.data)
@@ -148,4 +172,4 @@ class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
         fields = ('id', 'event_name', 'book', 'location', 'organizing_reader',
-                'date_of_event', 'start_time', 'end_time', 'max_capacity', 'image_url','attendees', 'joined')
+                'date_of_event', 'start_time', 'end_time', 'max_capacity', 'image_url','attendees', 'joined', 'creator')

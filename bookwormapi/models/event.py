@@ -26,3 +26,11 @@ class Event(models.Model):
     @joined.setter
     def joined(self, value):
         self.__joined = value
+
+    @property
+    def creator(self):
+        return self.__creator
+
+    @creator.setter
+    def creator(self, value):
+        self.__creator = value
