@@ -12,3 +12,11 @@ class Book(models.Model):
     reader = models.ForeignKey(
         "Reader", on_delete=models.CASCADE, related_name="reader_book")
     image_url = models.CharField(max_length=200)
+
+    @property
+    def creator(self):
+        return self.__creator
+
+    @creator.setter
+    def creator(self, value):
+        self.__creator = value

@@ -109,7 +109,7 @@ class EventView(ViewSet):
         event.location=request.data["location"]
         event.date_of_event=request.data["date_of_event"]
         event.start_time=request.data["start_time"]
-        event.end_time=request.data["start_time"]
+        event.end_time=request.data["end_time"]
         event.max_capacity=request.data["max_capacity"]
         event.image_url=request.data["image_url"]
 
